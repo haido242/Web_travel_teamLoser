@@ -1,0 +1,308 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+
+}
+body{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    color: #131a2f;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    position:fixed;
+    top: 40px;
+    min-width: 80%;
+    height: 122px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #131a2f;
+    color: #fff;;
+    transition: all 0.5s ease-in-out; 
+
+    z-index: 9999;
+}
+.header.scrolled{
+    height:100px;
+    transition: all 0.5s ease-in-out; 
+}
+.header .nav_logo{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+
+}
+.header .logo_name{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight:500;
+    line-height: 0.75;
+}
+.header .logo_text{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #929292;
+    letter-spacing:0.13rem;
+}
+.logo_name_container{
+    position: relative;
+    top: -8px;
+    padding-left: 32px;
+    height: 100%;
+}
+
+.nav_container ul{
+    position: absolute;
+    top:50px;
+    right:122px;
+    transition: all 0.5s ease-in-out; 
+    
+}
+.nav_container ul li{
+    display: inline-block;
+    
+}
+.nav_container ul li a{
+    padding: 50px 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    
+}
+.header.scrolled .nav_container ul{
+    /* padding: 30px 12px; */
+    top:40px;
+    transition: all 0.5s ease-in-out; 
+
+}
+.nav_container ul li a:hover{
+    color: #eb344a;
+    font-weight: 100;
+    transition: all 0.3s ease;
+}
+
+.nav_container .search{
+    position: absolute;
+    right:0;
+    font-size: 30px;
+    padding: 43px;
+    background-color: #fe435b;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; 
+
+}
+.header.scrolled .nav_container .search{
+    padding: 32px 43px;
+    transition: all 0.5s ease-in-out; 
+
+}
+.nav_container .search:hover{
+    background-color: #eb344a;
+    transition: all 0.3s ease;
+}
+.home_background img{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    z-index: -1000;
+}
+.find{
+    position: relative;
+    
+}
+.find_background img{
+    position: relative;
+    top: -4px;
+    height: 260px;
+    width: 100%;
+    z-index:-9999;
+}
+.find_content{
+    position: relative;
+    top: -120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.find_content .find_item{
+    margin: 0 10px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    line-height:3;
+}
+.find_content .find_item input{
+    height: 50px;
+    width: 300px;
+    border: solid 2px rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,0);
+    outline: none;
+    color: #fff;
+}
+.find_item:hover input{
+    border: solid 2px #eb344a;
+    transition: all 0.5s ease-in-out;
+
+}
+::placeholder{
+    color: #fff;
+}
+.find_content .find_item select{
+    color: rgb(63, 63, 63);
+
+    height: 50px;
+    outline: none;
+    background-color: rgba(255,255,255,0);
+    border: solid 2px rgba(255,255,255,.5);
+    color: #fff;
+}
+.find_item:hover select{
+    border: solid 2px #eb344a;
+    transition: all 0.5s ease-in-out;
+}
+.find_content .find_item select option{
+    color: #000
+}
+.find_content .find_item .price{
+    width: 115px;
+}
+.find_content .find_item #Categories{
+    width: 300px
+}
+.find .find_title{
+    position: absolute;
+    top: 40px;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height:1.1;
+    color: #fff;
+    margin-left: 30%;
+    margin-right: auto;
+}
+.find #find_btn{
+    position: relative;
+    top:35px;
+    background-color:#fe435b;
+    width: 161px;
+    height: 50px;
+}
+.find #find_btn:hover{
+    background-color:#eb344a;
+    transition: all 0.3s ease;
+}
+.find #find_btn h3{
+    position: relative;
+    left: 40%;
+}
+.top{
+    width: 100%;
+    height: 85vh;
+
+
+}
+.top h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing:3px;
+}
+.top h3{
+    font-family: 'Raleway', sans-serif;
+    line-height: 50px;
+    /* font-size: 40px; */
+    text-align: center;
+    letter-spacing:3px;
+}
+.top .top_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.top .top_container img{
+    height:360px;
+    width:260px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.top .top_container .top_items{
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    margin: 0 20px;
+}
+.top .top_container .top_items h4{
+    position: absolute;
+    bottom: 20px;
+    left:10px;
+    color: #fff;
+    /* font-family: 'Raleway', sans-serif; */
+    
+    font-size: 16px;
+    font-weight: 7000;
+    letter-spacing: 1px;
+}
+.top .top_container .top_price{
+    position: relative;
+    top: 310px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.sale_offers_container{
+    position: relative;
+    height:90vh;
+}
+.sale_offers_container .offers_background img{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    z-index: -9999;
+}
+.sale_items_container{
+    position: relative;
+    top: -550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sale_offers_container .sale_offers_items{
+    /* position: absolute; */
+    /* top:0; */
+    margin:0 30px;
+    height:510px;
+    width:494px;
+    background-color: #fe435cbb;
+    
+}
+.sale_offers_container .sale_offers_items .name{
+    position: relative;
+    top: 40px;
+    left:60px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+.sale_offers_container .sale_offers_items .sale_off{
+    position: relative;
+    top: 30px;
+    left: 80px;
+    font-size: 150px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.sale_offers_container .sale_offers_items .sale_title{
+    position: relative;
+    top:30px;
+    left: 20%;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+
+}
