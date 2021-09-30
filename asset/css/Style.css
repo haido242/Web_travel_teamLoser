@@ -144,15 +144,26 @@ a{
     outline: none;
     color: #fff;
 }
+.find_item:hover input{
+    border: solid 2px #eb344a;
+    transition: all 0.5s ease-in-out;
+
+}
 ::placeholder{
     color: #fff;
 }
 .find_content .find_item select{
+    color: rgb(63, 63, 63);
+
     height: 50px;
     outline: none;
     background-color: rgba(255,255,255,0);
     border: solid 2px rgba(255,255,255,.5);
     color: #fff;
+}
+.find_item:hover select{
+    border: solid 2px #eb344a;
+    transition: all 0.5s ease-in-out;
 }
 .find_content .find_item select option{
     color: #000
@@ -240,5 +251,58 @@ a{
     position: relative;
     top: 310px;
     font-family: 'Raleway', sans-serif;
+
+}
+
+.sale_offers_container{
+    position: relative;
+    height:90vh;
+}
+.sale_offers_container .offers_background img{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    z-index: -9999;
+}
+.sale_items_container{
+    position: relative;
+    top: -550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sale_offers_container .sale_offers_items{
+    /* position: absolute; */
+    /* top:0; */
+    margin:0 30px;
+    height:510px;
+    width:494px;
+    background-color: #fe435cbb;
     
+}
+.sale_offers_container .sale_offers_items .name{
+    position: relative;
+    top: 40px;
+    left:60px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+.sale_offers_container .sale_offers_items .sale_off{
+    position: relative;
+    top: 30px;
+    left: 80px;
+    font-size: 150px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.sale_offers_container .sale_offers_items .sale_title{
+    position: relative;
+    top:30px;
+    left: 20%;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+
 }
