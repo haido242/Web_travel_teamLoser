@@ -5,6 +5,10 @@
     border: none;
 
 }
+*::selection{
+    background-color:#fe435c93;
+    color: #fff;
+}
 body{
     font-family: 'Montserrat',sans-serif;
     font-size: 14px;
@@ -166,7 +170,8 @@ a{
     transition: all 0.5s ease-in-out;
 }
 .find_content .find_item select option{
-    color: #000
+    color: #000;
+    opacity: 0.7;
 }
 .find_content .find_item .price{
     width: 115px;
@@ -306,3 +311,106 @@ a{
     font-family: 'Raleway', sans-serif;
 
 }
+.sale_offers_container .sale_offers_items .sale_text{
+    position: relative;
+    top: 50px;
+    width:340px;
+    left: 60px;
+}
+.sale_offers_container .sale_offers_items .sale_text h5{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 26px;
+    letter-spacing: 1px;
+    /* line-break: 26px; */
+}
+.sale_offers_container .sale_offers_items .offer_btn{
+    position: relative;
+    top: 100px;
+    left:12em;
+    padding:20px 40px;
+    color: #fff;
+    background-color: #131a2f;
+}
+.sale_offers_container .logo_offer{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    
+}
+.sale_offers_container .logo_offer img{
+    /* height: 100px;
+    width: 100%; */
+}
+.video{
+    position: relative;
+    height: 80vh;
+}
+.play_btn{
+    position: relative;
+    top:-600px;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 100; */
+}
+.video .video_background img{
+    position: relative;
+    object-fit: cover;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -9999;
+}
+.play_btn_circle{
+    cursor: pointer;
+    display: flex;
+    height:100px;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fe435b; */
+    border: solid 3px rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+    border-radius: 50%;
+    
+}
+.play_btn_triangle{
+    width: 0;
+    height: 0;
+    /* border:1px solid #000; */
+    border-style: solid;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent transparent transparent #ffffff52;
+}
+.video .video_background{
+    width: 100%;
+    height: 100%;
+}
+.video .video_content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 999;
+    
+}
+.video .video_content.active{
+    position: absolute;
+    top: 0;
+
+    opacity: 1;
+    z-index: 999;
+}
+.video .video_content video{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
