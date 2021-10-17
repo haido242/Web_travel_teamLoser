@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+<!-- Do Trung Hai -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel</title>
         <link rel="stylesheet" href="./asset/css/Style.css">
-        <title>Web travel</title>
         <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400">
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-         
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/png" href="./asset/img/Logo.png">
 
     </head>
     <body>
@@ -37,11 +39,11 @@
                 <div>
 
                     <ul class="">
-                        <li><a href="#">Home</a></li>
+                        <li><a id="nav--home__btn" href="index.html">Home</a></li>
                         <li><a href="#">About us</a></li>
-                        <li><a href="#">Offers</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="Offer.html">Offers</a></li>
+                        <li><a href="News.html">News</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="search">
@@ -52,6 +54,11 @@
         <div class="home_content">
             <div class="home_background">
                 <img src="./asset/img/TPhalong.jpg" alt="">
+                <div class="home_text">
+                    <h1>discover</h1>
+                    <h2>Discover new worlds</h2>
+                </div>
+
             </div>
             <div class="find">
                 <div class="find_background">
@@ -139,10 +146,10 @@
             </div>
             <div class="sale_offers_container">
                 <div class="offers_background">
-                    <img src="asset/img/Background_offers.jpg" alt="">
+                    <img src="./asset/img/Background_offers.jpg" alt="">
                 </div>
                 <div class="sale_items_container">
-
+                    
                     <div class="sale_offers_items">
                         <div class="name">
                             Ha Long Bay
@@ -155,10 +162,12 @@
                         </div>
                         <div class="sale_text">
                             <h5>
-
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nulla iusto quo repudiandae dolores quidem ipsam exercitationem ad asperiores ut ratione possimus, amet accusamus vero, odit a molestias libero maiores.
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nulla iusto quo repudiandae dolores 
                             </h5>
                         </div>
+                        <a href="#" class="offer_btn">See Offer</a>
+                        
                     </div>
                     <div class="sale_offers_items">
                         <div class="name">
@@ -172,17 +181,317 @@
                         </div>
                         <div class="sale_text">
                             <h5>
-
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus reiciendis natus odio praesentium voluptas eaque totam excepturi fuga autem, magni eligendi, ullam laborum ex, voluptatum harum. Nostrum cupiditate autem molestias!
+                                
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus reiciendis natus odio praesentium  
                             </h5>
                         </div>
+                        <a href="#" class="offer_btn">See Offer</a>
+                    </div>
                 </div>
+                <div class="logo_offer">
+                    <img src="./asset/img/Logo_shadow.png" alt="">
+
+                </div>
+            </div>
+            <div class="video">
+                <div class="video_background">
+                    <img src="./asset/img/Backgroud_playvideo.jpg" alt="">
+                </div>
+                <div class="play_btn">
+                    
+                    <div class="play_btn_circle">
+    
+                        <div class="play_btn_triangle">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="video_content">
+                    <video controls autoplay="true">
+                        <source src="./asset/Video/Richroll.mp4" type="video/mp4">
+                    </video>
+                    
+                </div>
+            </div>
+            <div class="popular">
+                <div class="popular_container">
+                    <div class="text">
+                        <h2>
+                            Popular destinations in 2021
+                        </h2>
+                        <h4>
+                            take a look at these offers
+                        </h4>
+                    </div>
+                    <div class="popular_content">
+                        <a id="halong" href="#">
+                            <img src="./asset/img/popular_halong.jpg" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Ha Long</h2>
+                            </div>
+                        </a>
+
+                        <a id="dalat" href="#">
+                            <img src="./asset/img/popular_dalat.jpg" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Da Lat</h2>
+                            </div>
+                        </a>
+
+                        <a id="hanoi" href="#">
+                            <img src="./asset/img/popular_hanoi.jpg" alt="" class="popular_items" >
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Ha Noi</h2>
+                            </div>
+                        </a>
+
+                        <a id="hagiang" href="#">
+                            <img src="./asset/img/popular_hagiang.jpg" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Ha Giang</h2>
+                            </div>
+                        </a>
+
+                        <a id="sapa" href="#">
+                            <img src="./asset/img/popular_sapa.jpg" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Sa Pa</h2>
+                            </div>
+                        </a>
+
+                        <a id="nhatrang" href="#">
+                            <img src="./asset/img/popular_nhatrang.jpg" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Nha Trang</h2>
+                            </div>
+                        </a>
+
+                        <a id="hoian" href="#">
+                            <img src="./asset/img/popular_hoian.jpg" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Hoi An</h2>
+                            </div>
+                        </a>
+
+                        <a id="phuquoc" href="#">
+                            <img src="./asset/img/popular_phuquoc.jpg#" alt="" class="popular_items">
+                            <div class="text_items">
+                                <h4>from 240$</h4>
+                                <h2>Phu Quoc</h2>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="slider">
+                <div class="slide_container">
+                    <div class="slide_text">
+                        <h1>Special offers</h1>
+                        <h4>take a look at these offers</h4>
+                    </div>
+                    <div class="slide_img">
+
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_sapa.jpg" alt="">
+                        </div>
+    
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_phuquoc.jpg" alt="">
+                        </div>
+    
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_ninhbinh.jpg" alt="">
+                        </div>
+    
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_hanoi.jpg" alt="">
+                        </div>
+    
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_halong.jpg" alt="">
+                        </div>
+    
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_danang.jpg" alt="">
+                        </div>
+    
+                        <div class="slide_items">
+                            <img src="./asset/img/Slide_dalat.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slide_btn">
+                        <div class="slide-left_btn">
+                            <a href="#">
+
+                                <i class='bx bx-chevron-left' ></i>
+                            </a>
+                        </div>
+                        <div class="slide-right_btn">
+                            <a href="#">
+
+                                <i class='bx bx-chevron-right' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+            <div class="subscribe">
+                <div class="subscribe_container">
+                    <div class="sub_background">
+                        <img src="./asset/img/find.jpg" alt="">
+                    </div>
+                    <div class="sub_text">
+                        <h1>Subscribe to our Newsletter</h1>
+                    </div>
+                    <div class="sub_input_container">
+                        <div class="input">
+                            <input type="text" placeholder="Your E-mail address">
+                        </div>
+                        <div class="sub_btn">
+                            <a href="#">
+                                Subscribe
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- <iframe width="1350" height="480" src="https://www.youtube.com/embed/iik25wqIuFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <div class="footer">
+            
+            <div class="footer_container">
+                <div class="footer_information">
+                    <div class="nav_logo">
+                <div class="logo">
+                    <img src="./asset/img/Logo.png" alt="">
+                </div>
+                <div class="logo_name_container">
+
+                    <div class="logo_name">
+                        destino
+                    </div>
+                    <div class="logo_text">
+                        travel agency
+                    </div>
+                </div>
+            </div>
+                </div>
+                <div class="footer_news">
+                    <div class="news_title">
+                        <h1>Latest News</h1>
+                    </div>
+                    <div class="news_items_container">
+
+                        <div class="News_items">
+                            <img src="./asset/img/DaLat.jpg" alt="">
+                            <div class="new_items_text">
+
+                                <h3>Dalat cloudy</h3>
+                                <h4>24 feb 2021</h4>
+                            </div>
+                        </div>
+                        <div class="News_items">
+                            <img src="./asset/img/popular_sapa.jpg" alt="">
+                            <div class="new_items_text">
+
+                                <h3>Hagiang </h3>
+                                <h4>24 feb 2021</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_tag">
+                    <h1>Tag</h1>
+                    <div class="tag_container">
+
+                        <a href="#">
+
+                            travel
+                        </a>
+                        <a href="#">
+                            summer
+                        </a>
+                        <a href="News.html">cruise</a>
+                        <a href="News.html">beach</a>
+                        <a href="News.html">offer</a>
+                        <a href="News.html">vacation</a>
+                        <a href="News.html">trip</a>
+                        <a href="News.html">city beach</a>
+                        <a href="News.html">adventure</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
         <script src="./js/Index.js"></script>
+        <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slide_img').slick({
+                slidesToShow: 4,
+                slidesToScroll: 4
+                });
+
+                var filtered = false;
+
+                $('.js-filter').on('click', function(){
+                if (filtered === false) {
+                    $('.filtering').slick('slickFilter',':even');
+                    $(this).text('Unfilter Slides');
+                    filtered = true;
+                } else {
+                    $('.filtering').slick('slickUnfilter');
+                    $(this).text('Filter Slides');
+                    filtered = false;
+                }
+                });
+            });
+        </script> -->
+<!--#################################################################
+#                             _`				#
+#                          _ooOoo_				#
+#                         o8888888o				#
+#                         88" . "88				#
+#                         (| -_- |)				#
+#                         O\  =  /O				#
+#                      ____/`---'\____				#
+#                    .'  \\|     |//  `.			#
+#                   /  \\|||  :  |||//  \			#
+#                  /  _||||| -:- |||||_  \			#
+#                  |   | \\\  -  /'| |   |			#
+#                  | \_|  `\`---'//  |_/ |			#
+#                  \  .-\__ `-. -'__/-.  /			#
+#                ___`. .'  /--.--\  `. .'___			#
+#             ."" '<  `.___\_<|>_/___.' _> \"".			#
+#            | | :  `- \`. ;`. _/; .'/ /  .' ; |		#
+#            \  \ `-.   \_\_`. _.'_/_/  -' _.' /		#
+#=============`-.`___`-.__\ \___  /__.-'_.'_.-'=================#
+                           `=--=-'                    
 
 
+cầu code chạy không bug
+          _.-/`)
+         // / / )
+      .=// / / / )
+     //`/ / / / /
+    // /     ` /
+   ||         /
+    \\       /
+     ))    .'
+    //    /
+         / -->
     </body>
 </html>

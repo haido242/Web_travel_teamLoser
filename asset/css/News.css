@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+
+}
+*::selection{
+    background-color:#fe435c93;
+    color: #fff;
+}
+body{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    color: #131a2f;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    position:fixed;
+    top: 40px;
+    min-width: 80%;
+    height: 122px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #131a2f;
+    color: #fff;;
+    transition: all 0.5s ease-in-out; 
+
+    z-index: 9999;
+}
+.header.scrolled{
+    top:14px;
+    height:100px;
+    transition: all 0.5s ease-in-out; 
+}
+.header .nav_logo{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+
+}
+.header .logo_name{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight:500;
+    line-height: 0.75;
+}
+.header .logo_text{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #929292;
+    letter-spacing:0.13rem;
+}
+.header .logo_name_container{
+    position: relative;
+    top: -8px;
+    padding-left: 32px;
+    height: 100%;
+}
+#nav--news__btn{
+    color: #fe435b;
+    border-bottom: #fe435b 4px solid;
+}
+#nav--news__btn:hover{
+    color: #eb344a;
+}
+
+.nav_container ul{
+    position: absolute;
+    top:50px;
+    right:122px;
+    transition: all 0.5s ease-in-out; 
+    
+}
+.nav_container ul li{
+    display: inline-block;
+    
+}
+.nav_container ul li a{
+    padding: 50px 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out; 
+
+    
+}
+.header.scrolled .nav_container ul{
+    /* padding: 30px 12px; */
+    top:40px;
+    transition: all 0.5s ease-in-out; 
+
+}
+.header.scrolled .nav_container a {
+    padding: 36px 20px;
+    transition: all 0.5s ease-in-out; 
+
+}
+.nav_container ul li a:hover{
+    color: #eb344a;
+    font-weight: 100;
+    transition: all 0.3s ease;
+}
+
+.nav_container .search{
+    position: absolute;
+    right:0;
+    font-size: 30px;
+    padding: 43px;
+    background-color: #fe435b;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; 
+
+}
+.header.scrolled .nav_container .search{
+    padding: 32px 43px;
+    transition: all 0.5s ease-in-out; 
+
+}
+.nav_container .search:hover{
+    background-color: #eb344a;
+    transition: all 0.3s ease;
+}
