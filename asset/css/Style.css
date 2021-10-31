@@ -19,6 +19,9 @@ body{
 a{
     text-decoration: none;
 }
+.uppercase{
+    text-transform: uppercase;
+}
 .header{
     position:fixed;
     top: 40px;
@@ -43,19 +46,19 @@ a{
     left: 40px;
 
 }
-.header .logo_name{
+ .logo_name{
     text-transform: uppercase;
     font-size: 24px;
     font-weight:500;
     line-height: 0.75;
 }
-.header .logo_text{
+ .logo_text{
     text-transform: uppercase;
     font-size: 10px;
     color: #929292;
     letter-spacing:0.13rem;
 }
-.header .logo_name_container{
+ .logo_name_container{
     position: relative;
     top: -8px;
     padding-left: 32px;
@@ -125,11 +128,50 @@ a{
     background-color: #eb344a;
     transition: all 0.3s ease;
 }
+.home_background{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .home_background img{
     position: relative;
     width: 100%;
     height:100vh;
     z-index: -1000;
+}
+.home_background .home_text{
+    position: absolute;
+    /* top: 40%; */
+    
+}
+.home_background .home_text .discover{
+    position: relative;
+}
+.home_background .home_text h1{
+    text-transform: uppercase;
+    color: #fdaa27;
+    font-weight: 900;
+    font-size: 215px;
+    line-height: 161px;
+    text-align: center;
+    text-shadow: #000 0 0 1px;
+    opacity: 0.6;
+}
+.home_background .home_text h2{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 500px;
+    margin: 36px auto;
+    top: 0;
+    width: 900px;
+    text-align: center;
+    color: #fff;
+    /* font-size: 72px; */
+    line-height:108px;
+    font: 72px sans-serif;
+    /* font-weight: 200; */
 }
 .find{
     position: relative;
@@ -611,7 +653,40 @@ a{
 .footer .footer_container .footer_information{
     height: 80%;
     width: 25%;
-    border: solid 2px rgba(255,255,255,.5);
+    /* border: solid 2px rgba(255,255,255,.5); */
+}
+.footer .footer_container .footer_information .team_information p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: italic;
+}
+.footer .footer_container .footer_information ul{
+    display: flex;
+    list-style-type: none;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+.footer .footer_container .footer_information ul li a:hover i{
+    color: #eb344a;
+    transition: all 0.5s ease;
+}
+.footer .footer_container .footer_information ul li a i{
+    font-size: 32px;
+    color: #fff;
+}
+/* .footer .logo_name_container .logo_name{
+    text-transform: uppercase;
+    
+} */
+.footer .footer_container .footer_information .copyright{
+    position: absolute;
+    bottom: 10px;
+}
+.footer .footer_container .footer_information .copyright p{
+    font-size: 12px;
+    font-style: oblique;
+    font-weight: 100;
 }
 .footer .footer_container .footer_news{
     height: 80%;
