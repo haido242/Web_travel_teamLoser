@@ -702,12 +702,12 @@ a{
 
 
 .content .content-pages .page a {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    /* background-color: #000; */
     font-size: 20px;
     font-weight:400;
-    outline: 2px ridge rgba(77, 130, 223, 0.6);
-    border-radius: 2rem;
+    /* outline: 2px ridge rgba(77, 130, 223, 0.6); */
+    /* border-radius: 2rem; */
     text-align: center;
     margin: 5px;
 }

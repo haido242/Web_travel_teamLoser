@@ -9,3 +9,33 @@ window.addEventListener("scroll", function(){
 btn.onclick = function(){
     video.classList.toggle("active")
 }
+
+$(document).ready(function(){
+    $('.slide_img').slick({
+        centerMode: true,
+        centerPadding: '140px',
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '10px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+  });
