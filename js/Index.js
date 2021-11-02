@@ -6,17 +6,19 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("scrolled", window.scrollY > 0)
 })
 
-btn.onclick = function(){
-    video.classList.toggle("active")
-}
+// btn.onclick = function(){
+//     video.classList.toggle("active")
+// }
 
 $(document).ready(function(){
-    $('.slide_img').slick({
+    $('.slide_img').slick(
+        {
         centerMode: true,
         centerPadding: '140px',
         slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: 1000,
+        arrows: true,
         responsive: [
           {
             breakpoint: 768,
@@ -37,5 +39,6 @@ $(document).ready(function(){
             }
           }
         ]
-      });
+      }
+    );
   });
