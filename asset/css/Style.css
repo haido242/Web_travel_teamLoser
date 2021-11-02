@@ -471,6 +471,10 @@ a{
     width: 100%;
     height: 100%;
 }
+.video .video_content iframe{
+    width: 100%;
+    height: 100%;
+}
 .popular{
     position: relative;
     align-items: center;
